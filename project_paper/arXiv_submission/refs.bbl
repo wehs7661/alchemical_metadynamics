@@ -1,0 +1,530 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{59}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[H{\'e}nin \latin{et~al.}(2022)H{\'e}nin, Leli{\`e}vre, Shirts,
+  Valsson, and Delemotte]{henin2022enhanced}
+H{\'e}nin,~J.; Leli{\`e}vre,~T.; Shirts,~M.~R.; Valsson,~O.; Delemotte,~L.
+  Enhanced sampling methods for molecular dynamics simulations. \emph{arXiv
+  preprint arXiv:2202.04164} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Torrie and Valleau(1977)Torrie, and Valleau]{umbrella}
+Torrie,~G.~M.; Valleau,~J.~P. Nonphysical sampling distributions in Monte Carlo
+  free-energy estimation: Umbrella sampling. \emph{Journal of Computational
+  Physics} \textbf{1977}, \emph{23}, 187--199\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Darve \latin{et~al.}(2008)Darve, Rodr{\'\i}guez-G{\'o}mez, and
+  Pohorille]{ABF}
+Darve,~E.; Rodr{\'\i}guez-G{\'o}mez,~D.; Pohorille,~A. Adaptive biasing force
+  method for scalar and vector free energy calculations. \emph{The Journal of
+  chemical physics} \textbf{2008}, \emph{128}, 144120\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Laio and Parrinello(2002)Laio, and Parrinello]{metad}
+Laio,~A.; Parrinello,~M. Escaping free-energy minima. \emph{Proceedings of the
+  National Academy of Sciences} \textbf{2002}, \emph{99}, 12562--12566\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bussi \latin{et~al.}(2006)Bussi, Gervasio, Laio, and
+  Parrinello]{bussi2006free}
+Bussi,~G.; Gervasio,~F.~L.; Laio,~A.; Parrinello,~M. Free-energy landscape for
+  $\beta$ hairpin folding from combined parallel tempering and metadynamics.
+  \emph{Journal of the American Chemical Society} \textbf{2006}, \emph{128},
+  13435--13441\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bonomi and Parrinello(2010)Bonomi, and Parrinello]{bonomi2010enhanced}
+Bonomi,~M.; Parrinello,~M. Enhanced sampling in the well-tempered ensemble.
+  \emph{Physical review letters} \textbf{2010}, \emph{104}, 190601\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piana and Laio(2007)Piana, and Laio]{var2}
+Piana,~S.; Laio,~A. A bias-exchange approach to protein folding. \emph{The
+  journal of physical chemistry B} \textbf{2007}, \emph{111}, 4553--4559\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Marinari and Parisi(1992)Marinari, and Parisi]{marinari1992simulated}
+Marinari,~E.; Parisi,~G. Simulated tempering: a new Monte Carlo scheme.
+  \emph{EPL (Europhysics Letters)} \textbf{1992}, \emph{19}, 451\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sugita and Okamoto(1999)Sugita, and Okamoto]{TREMD}
+Sugita,~Y.; Okamoto,~Y. Replica-exchange molecular dynamics method for protein
+  folding. 1999\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sugita \latin{et~al.}(2000)Sugita, Kitao, and Okamoto]{HREMD}
+Sugita,~Y.; Kitao,~A.; Okamoto,~Y. Multidimensional replica-exchange method for
+  free-energy calculations. \emph{The Journal of Chemical Physics}
+  \textbf{2000}, \emph{113}, 6042--6051\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lyubartsev \latin{et~al.}(1992)Lyubartsev, Martsinovski, Shevkunov,
+  and Vorontsov-Velyaminov]{EXE}
+Lyubartsev,~A.; Martsinovski,~A.; Shevkunov,~S.; Vorontsov-Velyaminov,~P. New
+  approach to Monte Carlo calculation of the free energy: Method of expanded
+  ensembles. \emph{The Journal of chemical physics} \textbf{1992}, \emph{96},
+  1776--1783\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Knight and Brooks~III(2009)Knight, and Brooks~III]{knight2009lambda}
+Knight,~J.~L.; Brooks~III,~C.~L. $\lambda$-Dynamics free energy simulation
+  methods. \emph{Journal of computational chemistry} \textbf{2009}, \emph{30},
+  1692--1700\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Oshima \latin{et~al.}(2019)Oshima, Re, and Sugita]{oshima2019replica}
+Oshima,~H.; Re,~S.; Sugita,~Y. Replica-exchange umbrella sampling combined with
+  Gaussian accelerated molecular dynamics for free-energy calculation of
+  biomolecules. \emph{Journal of Chemical Theory and Computation}
+  \textbf{2019}, \emph{15}, 5199--5208\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Knight and Brooks~III(2011)Knight, and
+  Brooks~III]{knight2011multisite}
+Knight,~J.~L.; Brooks~III,~C.~L. Multisite $\lambda$ dynamics for simulated
+  structure--activity relationship studies. \emph{Journal of chemical theory
+  and computation} \textbf{2011}, \emph{7}, 2728--2739\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Marques \latin{et~al.}(2019)Marques, Bednar, and Damborsky]{buried1}
+Marques,~S.~M.; Bednar,~D.; Damborsky,~J. Computational study of protein-ligand
+  unbinding for enzyme engineering. \emph{Frontiers in chemistry}
+  \textbf{2019}, \emph{6}, 650\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2017)Wang, Martins, and Lindorff-Larsen]{buried2}
+Wang,~Y.; Martins,~J.~M.; Lindorff-Larsen,~K. Biomolecular conformational
+  changes and ligand binding: from kinetics to thermodynamics. \emph{Chemical
+  science} \textbf{2017}, \emph{8}, 6466--6473\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Trapl \latin{et~al.}(2020)Trapl, del R{\'\i}o, K{\v{r}}{\'\i}{\v{z}},
+  and Spiwok]{trapl2020prediction}
+Trapl,~D.; del R{\'\i}o,~C.~C.; K{\v{r}}{\'\i}{\v{z}},~P.; Spiwok,~V.
+  Prediction of pKa in a system with high orthogonal barriers: Alchemical
+  flying Gaussian method. \emph{Chemical Physics Letters} \textbf{2020},
+  \emph{760}, 138012\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hahn \latin{et~al.}(2020)Hahn, K{\"o}nig, and
+  H{\"u}nenberger]{hahn2020overcoming}
+Hahn,~D.~F.; K{\"o}nig,~G.; H{\"u}nenberger,~P.~H. Overcoming orthogonal
+  barriers in alchemical free energy calculations: On the relative merits of
+  $\lambda$-variations, $\lambda$-extrapolations, and biasing. \emph{Journal of
+  Chemical Theory and Computation} \textbf{2020}, \emph{16}, 1630--1645\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bieler \latin{et~al.}(2014)Bieler, H{\"a}uselmann, and
+  H{\"u}nenberger]{bieler2014local}
+Bieler,~N.~S.; H{\"a}uselmann,~R.; H{\"u}nenberger,~P.~H. Local elevation
+  umbrella sampling applied to the calculation of alchemical free-energy
+  changes via $\lambda$-dynamics: The $\lambda$-LEUS scheme. \emph{Journal of
+  Chemical Theory and Computation} \textbf{2014}, \emph{10}, 3006--3022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bieler \latin{et~al.}(2015)Bieler, Tschopp, and
+  H{\"u}nenberger]{bieler2015multistate}
+Bieler,~N.~S.; Tschopp,~J.~P.; H{\"u}nenberger,~P.~H. Multistate
+  $\lambda$-local-elevation umbrella-sampling (MS-$\lambda$-LEUS): Method and
+  application to the complexation of cations by crown ethers. \emph{Journal of
+  Chemical Theory and Computation} \textbf{2015}, \emph{11}, 2575--2588\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zheng \latin{et~al.}(2008)Zheng, Chen, and Yang]{zheng2008random}
+Zheng,~L.; Chen,~M.; Yang,~W. Random walk in orthogonal space to achieve
+  efficient free-energy simulation of complex systems. \emph{Proceedings of the
+  National Academy of Sciences} \textbf{2008}, \emph{105}, 20227--20232\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zheng and Yang(2012)Zheng, and Yang]{zheng2012practically}
+Zheng,~L.; Yang,~W. Practically efficient and robust free energy calculations:
+  double-integration orthogonal space tempering. \emph{Journal of Chemical
+  Theory and Computation} \textbf{2012}, \emph{8}, 810--823\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hayes \latin{et~al.}(2017)Hayes, Armacost, Vilseck, and
+  Brooks~III]{hayes2017adaptive}
+Hayes,~R.~L.; Armacost,~K.~A.; Vilseck,~J.~Z.; Brooks~III,~C.~L. Adaptive
+  landscape flattening accelerates sampling of alchemical space in multisite
+  $\lambda$ dynamics. \emph{The Journal of Physical Chemistry B} \textbf{2017},
+  \emph{121}, 3626--3635\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tribello \latin{et~al.}(2014)Tribello, Bonomi, Branduardi, Camilloni,
+  and Bussi]{tribello2014plumed}
+Tribello,~G.~A.; Bonomi,~M.; Branduardi,~D.; Camilloni,~C.; Bussi,~G. PLUMED 2:
+  New feathers for an old bird. \emph{Computer Physics Communications}
+  \textbf{2014}, \emph{185}, 604--613\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Barducci \latin{et~al.}(2008)Barducci, Bussi, and Parrinello]{WTMetaD}
+Barducci,~A.; Bussi,~G.; Parrinello,~M. Well-tempered metadynamics: a smoothly
+  converging and tunable free-energy method. \emph{Physical review letters}
+  \textbf{2008}, \emph{100}, 020603\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hastings(1970)]{hastings1970monte}
+Hastings,~W.~K. Monte Carlo sampling methods using Markov chains and their
+  applications. \textbf{1970}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Barker(1965)]{barker1965monte}
+Barker,~A.~A. Monte carlo calculations of the radial distribution functions for
+  a proton? electron plasma. \emph{Australian Journal of Physics}
+  \textbf{1965}, \emph{18}, 119--134\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Geman and Geman(1984)Geman, and Geman]{geman1984stochastic}
+Geman,~S.; Geman,~D. Stochastic relaxation, Gibbs distributions, and the
+  Bayesian restoration of images. \emph{IEEE Transactions on pattern analysis
+  and machine intelligence} \textbf{1984}, 721--741\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Liu and Liu(2001)Liu, and Liu]{liu2001monte}
+Liu,~J.~S.; Liu,~J.~S. \emph{Monte Carlo strategies in scientific computing};
+  Springer, 2001; Vol.~10\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Liu(1996)]{liu1996peskun}
+Liu,~J.~S. Peskun's theorem and a modified discrete-state Gibbs sampler.
+  \emph{Biometrika} \textbf{1996}, \emph{83}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chodera(2016)]{chodera2016simple}
+Chodera,~J.~D. A simple method for automated equilibration detection in
+  molecular simulations. \emph{Journal of chemical theory and computation}
+  \textbf{2016}, \emph{12}, 1799--1805\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Desgranges and Delhommelle(2012)Desgranges, and
+  Delhommelle]{desgranges2012evaluation}
+Desgranges,~C.; Delhommelle,~J. Evaluation of the grand-canonical partition
+  function using expanded Wang-Landau simulations. I. Thermodynamic properties
+  in the bulk and at the liquid-vapor phase boundary. \emph{The Journal of
+  Chemical Physics} \textbf{2012}, \emph{136}, 184107\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang and Landau(2001)Wang, and Landau]{wang2001efficient}
+Wang,~F.; Landau,~D.~P. Efficient, multiple-range random walk algorithm to
+  calculate the density of states. \emph{Physical review letters}
+  \textbf{2001}, \emph{86}, 2050\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Belardinelli and Pereyra(2007)Belardinelli, and
+  Pereyra]{belardinelli2007fast}
+Belardinelli,~R.; Pereyra,~V. Fast algorithm to calculate density of states.
+  \emph{Physical Review E} \textbf{2007}, \emph{75}, 046701\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dama \latin{et~al.}(2014)Dama, Rotskoff, Parrinello, and
+  Voth]{dama2014transition}
+Dama,~J.~F.; Rotskoff,~G.; Parrinello,~M.; Voth,~G.~A. Transition-tempered
+  metadynamics: robust, convergent metadynamics via on-the-fly transition
+  barrier estimation. \emph{Journal of Chemical Theory and Computation}
+  \textbf{2014}, \emph{10}, 3626--3633\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Branduardi \latin{et~al.}(2012)Branduardi, Bussi, and
+  Parrinello]{branduardi2012metadynamics}
+Branduardi,~D.; Bussi,~G.; Parrinello,~M. Metadynamics with adaptive Gaussians.
+  \emph{Journal of chemical theory and computation} \textbf{2012}, \emph{8},
+  2247--2254\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Micheletti \latin{et~al.}(2004)Micheletti, Laio, and
+  Parrinello]{micheletti2004reconstructing}
+Micheletti,~C.; Laio,~A.; Parrinello,~M. Reconstructing the density of states
+  by history-dependent metadynamics. \emph{Physical Review Letters}
+  \textbf{2004}, \emph{92}, 170601\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bussi and Laio(2020)Bussi, and Laio]{bussi2020using}
+Bussi,~G.; Laio,~A. Using metadynamics to explore complex free-energy
+  landscapes. \emph{Nature Reviews Physics} \textbf{2020}, \emph{2},
+  200--212\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bussi \latin{et~al.}(2007)Bussi, Donadio, and
+  Parrinello]{bussi2007canonical}
+Bussi,~G.; Donadio,~D.; Parrinello,~M. Canonical sampling through velocity
+  rescaling. \emph{The Journal of chemical physics} \textbf{2007}, \emph{126},
+  014101\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Berendsen \latin{et~al.}(1984)Berendsen, Postma, Van~Gunsteren,
+  DiNola, and Haak]{berendsen1984molecular}
+Berendsen,~H.~J.; Postma,~J.~v.; Van~Gunsteren,~W.~F.; DiNola,~A.; Haak,~J.~R.
+  Molecular dynamics with coupling to an external bath. \emph{The Journal of
+  chemical physics} \textbf{1984}, \emph{81}, 3684--3690\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Parrinello and Rahman(1980)Parrinello, and
+  Rahman]{parrinello1980crystal}
+Parrinello,~M.; Rahman,~A. Crystal structure and pair potentials: A
+  molecular-dynamics study. \emph{Physical review letters} \textbf{1980},
+  \emph{45}, 1196\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Parrinello and Rahman(1981)Parrinello, and
+  Rahman]{parrinello1981polymorphic}
+Parrinello,~M.; Rahman,~A. Polymorphic transitions in single crystals: A new
+  molecular dynamics method. \emph{Journal of Applied physics} \textbf{1981},
+  \emph{52}, 7182--7190\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Essmann \latin{et~al.}(1995)Essmann, Perera, Berkowitz, Darden, Lee,
+  and Pedersen]{essmann1995smooth}
+Essmann,~U.; Perera,~L.; Berkowitz,~M.~L.; Darden,~T.; Lee,~H.; Pedersen,~L.~G.
+  A smooth particle mesh Ewald method. \emph{The Journal of chemical physics}
+  \textbf{1995}, \emph{103}, 8577--8593\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hess \latin{et~al.}(1997)Hess, Bekker, Berendsen, and
+  Fraaije]{hess1997lincs}
+Hess,~B.; Bekker,~H.; Berendsen,~H.~J.; Fraaije,~J.~G. LINCS: a linear
+  constraint solver for molecular simulations. \emph{Journal of computational
+  chemistry} \textbf{1997}, \emph{18}, 1463--1472\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shirts and Chodera(2008)Shirts, and Chodera]{shirts2008statistically}
+Shirts,~M.~R.; Chodera,~J.~D. Statistically optimal analysis of samples from
+  multiple equilibrium states. \emph{The Journal of chemical physics}
+  \textbf{2008}, \emph{129}, 124105\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rizzi \latin{et~al.}(2018)Rizzi, Murkli, McNeill, Yao, Sullivan,
+  Gilson, Chiu, Isaacs, Gibb, Mobley, \latin{et~al.} others]{rizzi2018overview}
+Rizzi,~A.; Murkli,~S.; McNeill,~J.~N.; Yao,~W.; Sullivan,~M.; Gilson,~M.~K.;
+  Chiu,~M.~W.; Isaacs,~L.; Gibb,~B.~C.; Mobley,~D.~L., \latin{et~al.}  Overview
+  of the SAMPL6 host--guest binding affinity prediction challenge.
+  \emph{Journal of computer-aided molecular design} \textbf{2018}, \emph{32},
+  937--963\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rizzi \latin{et~al.}(2020)Rizzi, Jensen, Slochower, Aldeghi, Gapsys,
+  Ntekoumes, Bosisio, Papadourakis, Henriksen, De~Groot, \latin{et~al.}
+  others]{rizzi2020sampl6}
+Rizzi,~A.; Jensen,~T.; Slochower,~D.~R.; Aldeghi,~M.; Gapsys,~V.;
+  Ntekoumes,~D.; Bosisio,~S.; Papadourakis,~M.; Henriksen,~N.~M.;
+  De~Groot,~B.~L., \latin{et~al.}  The SAMPL6 SAMPLing challenge: assessing the
+  reliability and efficiency of binding free energy calculations. \emph{Journal
+  of computer-aided molecular design} \textbf{2020}, \emph{34}, 601--633\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gilson \latin{et~al.}(1997)Gilson, Given, Bush, and
+  McCammon]{gilson1997statistical}
+Gilson,~M.~K.; Given,~J.~A.; Bush,~B.~L.; McCammon,~J.~A. The
+  statistical-thermodynamic basis for computation of binding affinities: a
+  critical review. \emph{Biophysical journal} \textbf{1997}, \emph{72},
+  1047--1069\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Branduardi \latin{et~al.}(2007)Branduardi, Gervasio, and
+  Parrinello]{branduardi2007b}
+Branduardi,~D.; Gervasio,~F.~L.; Parrinello,~M. From A to B in free energy
+  space. \emph{The Journal of chemical physics} \textbf{2007}, \emph{126},
+  054103\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[M.~Sultan and Pande(2017)M.~Sultan, and Pande]{m2017tica}
+M.~Sultan,~M.; Pande,~V.~S. tICA-metadynamics: accelerating metadynamics by
+  using kinetically selected collective variables. \emph{Journal of chemical
+  theory and computation} \textbf{2017}, \emph{13}, 2440--2447\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tiwary and Berne(2016)Tiwary, and Berne]{tiwary2016spectral}
+Tiwary,~P.; Berne,~B. Spectral gap optimization of order parameters for
+  sampling complex molecular systems. \emph{Proceedings of the National Academy
+  of Sciences} \textbf{2016}, \emph{113}, 2839--2844\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ribeiro \latin{et~al.}(2018)Ribeiro, Bravo, Wang, and
+  Tiwary]{ribeiro2018reweighted}
+Ribeiro,~J. M.~L.; Bravo,~P.; Wang,~Y.; Tiwary,~P. Reweighted autoencoded
+  variational Bayes for enhanced sampling (RAVE). \emph{The Journal of chemical
+  physics} \textbf{2018}, \emph{149}, 072301\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rohrdanz \latin{et~al.}(2011)Rohrdanz, Zheng, Maggioni, and
+  Clementi]{rohrdanz2011determination}
+Rohrdanz,~M.~A.; Zheng,~W.; Maggioni,~M.; Clementi,~C. Determination of
+  reaction coordinates via locally scaled diffusion map. \emph{The Journal of
+  chemical physics} \textbf{2011}, \emph{134}, 03B624\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sultan and Pande(2018)Sultan, and Pande]{sultan2018automated}
+Sultan,~M.~M.; Pande,~V.~S. Automated design of collective variables using
+  supervised machine learning. \emph{The Journal of chemical physics}
+  \textbf{2018}, \emph{149}, 094106\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McCarty and Parrinello(2017)McCarty, and
+  Parrinello]{mccarty2017variational}
+McCarty,~J.; Parrinello,~M. A variational conformational dynamics approach to
+  the selection of collective variables in metadynamics. \emph{The Journal of
+  chemical physics} \textbf{2017}, \emph{147}, 204109\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen and Ferguson(2018)Chen, and Ferguson]{chen2018molecular}
+Chen,~W.; Ferguson,~A.~L. Molecular enhanced sampling with autoencoders:
+  On-the-fly collective variable discovery and accelerated free energy
+  landscape exploration. \emph{Journal of computational chemistry}
+  \textbf{2018}, \emph{39}, 2079--2102\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2019)Wang, Ribeiro, and Tiwary]{wang2019past}
+Wang,~Y.; Ribeiro,~J. M.~L.; Tiwary,~P. Past--future information bottleneck for
+  sampling molecular reaction coordinate simultaneously with thermodynamics and
+  kinetics. \emph{Nature communications} \textbf{2019}, \emph{10}, 1--8\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wehmeyer and No{\'e}(2018)Wehmeyer, and No{\'e}]{wehmeyer2018time}
+Wehmeyer,~C.; No{\'e},~F. Time-lagged autoencoders: Deep learning of slow
+  collective variables for molecular kinetics. \emph{The Journal of chemical
+  physics} \textbf{2018}, \emph{148}, 241703\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

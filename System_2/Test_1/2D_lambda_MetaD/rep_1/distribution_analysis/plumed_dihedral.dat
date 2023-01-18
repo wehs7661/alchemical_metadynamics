@@ -1,0 +1,2 @@
+theta: TORSION ATOMS=1,2,3,4
+PRINT ARG=theta STRIDE=10 FILE=distribution_analysis/dihedral/dihedral_1_2_3_4_stateB.dat

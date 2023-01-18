@@ -1,0 +1,29 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+  1             1               no              1.0     1.0
+
+[ atomtypes ]
+;name  mass   charge ptype  sigma      epsilon
+AR  39.948    0.0   A     0.0062647225   9.847044e-06
+OW  16.00     0.0   A     0.0026173456   2.634129e-06
+HW  1.008     0.0   A     0.00000e+00    0.00000e+00
+
+[ moleculetype ]
+; molname       nrexcl
+Ar              1
+
+[ atoms ]
+; id    at type res nr  residu name     at name  cg nr   charge
+1       AR       1       Ar              Ar        1       0
+
+; Include water topology
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+[ system ]
+; Name
+Argon in water
+
+[ molecules ]
+; Compound        #mols
+AR                1
+SOL               464

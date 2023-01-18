@@ -1,0 +1,20 @@
+
+Data analysis of the file: State_A/dihedral.dat
+===============================================
+- Working directory: /ocean/projects/cts160011p/wehs7661/alchemical_MetaD/System_2/Test_1_redo/1D_lambda_MetaD
+- Command line: /jet/home/wehs7661/.local/bin/plot_hist -i State_A/dihedral.dat State_B/dihedral.dat -l State A State B -x Dihedral (deg) -cc radian to degree -n dihedral_hist_1D
+Assessment of the hsitogram flatness: N_ratio = inf
+The maximum of dihedral is 180.000020 deg.
+The minimum of dihedral is -179.999963 deg.
+The total number of counts is 100001.
+Dihedral between -179.999963 and -178.199963 deg has the highest count, which is 11967.
+
+Data analysis of the file: State_B/dihedral.dat
+===============================================
+- Working directory: /ocean/projects/cts160011p/wehs7661/alchemical_MetaD/System_2/Test_1_redo/1D_lambda_MetaD
+- Command line: /jet/home/wehs7661/.local/bin/plot_hist -i State_A/dihedral.dat State_B/dihedral.dat -l State A State B -x Dihedral (deg) -cc radian to degree -n dihedral_hist_1D
+Assessment of the hsitogram flatness: N_ratio = inf
+The maximum of dihedral is 30.231488 deg.
+The minimum of dihedral is -31.984223 deg.
+The total number of counts is 100001.
+Dihedral between 0.367947 and 0.679025 deg has the highest count, which is 2112.

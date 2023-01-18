@@ -1,0 +1,17 @@
+lambda: EXTRACV NAME=lambda
+  
+METAD ...
+ARG=lambda
+SIGMA=0.01     # small SIGMA ensure that the Gaussian approaximate a delta function
+HEIGHT=1.2388545199729883   # should be equal to init-wl-delta (0.5 kT)
+PACE=10        # should be nstexpanded
+GRID_MIN=0     # index of alchemical states starts from 0
+GRID_MAX=5     # we have 6 states in total
+GRID_BIN=5     # 5 bins between 6 states
+TEMP=298       # same as ref_t
+BIASFACTOR=50    # equivalent as wl-scale assuming periodic wl-weights updating
+LABEL=metad    # it's not clear how GRID parameters will have influences here
+FILE=HILLS_LAMBDA
+... METAD
+
+PRINT STRIDE=10 ARG=lambda,metad.bias FILE=COLVAR
