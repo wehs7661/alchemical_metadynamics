@@ -1,0 +1,11 @@
+
+Data analysis of the file: ../HILLS
+===================================
+- Working directory: /ocean/projects/cts160011p/wehs7661/alchemical_MetaD/System_2/Prep/torsion_MetaD/Analysis
+- Command line: /jet/home/wehs7661/.local/bin/plot_xy -i ../HILLS -c 3 -x Time (ns) -cx ps to ns -y Free energy (kT) -cy kJ/mol to kT -n hills_timeseries
+Analyzing the file ... 
+Plotting and saving figure ...
+The average of free energy: 0.038 (RMSF: 1.969, max: 1.111, min: 0.002)
+The maximum of free energy occurs at 0.001 ns.
+The minimum of free energy occurs at 4.989 ns.
+The free energy (0.038 kT) at 1.826 ns is closet to the average.
