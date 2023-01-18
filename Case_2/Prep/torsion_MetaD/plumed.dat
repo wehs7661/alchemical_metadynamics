@@ -1,0 +1,20 @@
+theta: TORSION ATOMS=1,2,3,4
+  
+METAD ...
+
+ARG=theta
+SIGMA=0.5
+HEIGHT=2.4777090399459767     # kJ/mol
+PACE=500        # should be nstexpanded
+GRID_MIN=-pi
+GRID_MAX=pi
+GRID_BIN=100
+TEMP=298
+BIASFACTOR=10
+LABEL=metad
+FILE=HILLS
+... METAD
+
+PRINT STRIDE=10 ARG=theta,metad.bias FILE=COLVAR
+
+

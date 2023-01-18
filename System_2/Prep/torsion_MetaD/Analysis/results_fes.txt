@@ -1,9 +1,0 @@
-
-Data analysis of the file: fes.dat
-==================================
-- Working directory: /ocean/projects/cts160011p/wehs7661/alchemical_MetaD/System_2/Prep/torsion_MetaD/Analysis
-- Command line: /jet/home/wehs7661/.local/bin/plot_xy -i fes.dat -x Torsional angle (degree) -cx radian to degree -y Free energy (kT) -cy kJ/mol to kT -n fes
-Analyzing the file ... 
-Plotting and saving figure ...
-Maximum of free energy: 48.564 kT, which occurs at 90.000 degree.
-Minimum of free energy: 0.000 kT, which occurs at -180.000 degree.

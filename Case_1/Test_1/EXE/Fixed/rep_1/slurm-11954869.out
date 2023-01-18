@@ -1,0 +1,85 @@
+                :-) GROMACS - gmx mdrun, 2021.4-plumed-2.8.0 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.4-plumed-2.8.0
+Executable:   /jet/home/wehs7661/pkgs/gromacs/2021.4/bin/gmx_mpi
+Data prefix:  /jet/home/wehs7661/pkgs/gromacs/2021.4
+Working dir:  /ocean/projects/cts160011p/wehs7661/alchemical_MetaD/System_1/Test_1/EXE/Fixed/rep_5
+Command line:
+  gmx_mpi mdrun -s sys1_EXE.tpr -x sys1_EXE.xtc -c sys1_EXE.gro -g EXE.log -e EXE.edr -cpi state.cpt
+
+Reading file sys1_EXE.tpr, VERSION 2021.4-plumed-2.8.0 (single precision)
+Changing nstlist from 10 to 40, rlist from 0.9 to 0.998
+
+Using 128 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'Argon in water'
+50000000 steps, 100000.0 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 12.0%.
+ The balanceable part of the MD step is 57%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 6.9%.
+ Average PME mesh/force load: 2.043
+ Part of the total run time spent waiting due to PP/PME imbalance: 21.1 %
+
+NOTE: 6.9 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      Dynamic load balancing was automatically disabled, but it might be beneficial to manually tuning it on (option -dlb on.)
+      You can also consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+NOTE: 21.1 % performance was lost because the PME ranks
+      had more work to do than the PP ranks.
+      You might want to increase the number of PME ranks
+      or increase the cut-off and the grid spacing.
+
+
+NOTE: 22 % of the run time was spent communicating energies,
+      you might want to increase some nst* mdp options
+
+               Core t (s)   Wall t (s)        (%)
+       Time:  1510353.177    11799.663    12800.0
+                         3h16:39
+                 (ns/day)    (hour/ns)
+Performance:      732.224        0.033
+
+GROMACS reminds you: "I Do It All the Time" (Magnapop)
+

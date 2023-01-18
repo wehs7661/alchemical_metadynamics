@@ -1,0 +1,2 @@
+theta: ANGLE ATOMS=2,3,4
+PRINT ARG=theta STRIDE=10 FILE=distribution_analysis/angle/angle_2_3_4_stateB.dat

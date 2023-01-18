@@ -1,2 +1,0 @@
-d: DISTANCE ATOMS=1,4
-PRINT ARG=d STRIDE=10 FILE=distribution_analysis/distance/distance_1_4_stateB.dat
