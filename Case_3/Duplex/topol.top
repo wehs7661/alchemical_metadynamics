@@ -1,0 +1,48 @@
+;
+;	File 'topol.top' was generated
+;	By user: vpiompon (8541)
+;	On host: giorgione.phys.sissa.it
+;	At date: Tue Oct 18 09:21:27 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	               :-) GROMACS - gmx pdb2gmx, 2020.3-UNCHECKED (-:
+;	
+;	Executable:   /u/m/mbernett/my_progs/gromacs2020.3_barostat_plumed/bin/gmx_mpi
+;	Data prefix:  /u/m/mbernett/my_progs/gromacs2020.3_barostat_plumed
+;	Working dir:  /net/sbp/sbpstore1/vpiompon/AlchMetad/A2_Metad2D
+;	Command line:
+;	  gmx_mpi pdb2gmx -f A2.pdb -o dup.gro -ignh
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "../../AFEC/ff-modified-nt/amber_na.ff/forcefield.itp"
+
+; Include chain topologies
+#include "topol_RNA_chain_A.itp"
+#include "topol_RNA_chain_B.itp"
+
+; Include water topology
+#include "../../AFEC/ff-modified-nt/amber_na.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "../../AFEC/ff-modified-nt/amber_na.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+RNA_chain_A         1
+RNA_chain_B         1
+SOL              5943

@@ -1,0 +1,44 @@
+MOLINFO STRUCTURE=dup.pdb
+eta6: TORSION ATOMS=@N1-5,@C6-5,@N6-5,@C10-5
+N1H61: TORSION ATOMS=@N1-5,@C6-5,@N6-5,@H61-5
+N1H62: TORSION ATOMS=@N1-5,@C6-5,@N6-5,@H62-5
+lambda: EXTRACV NAME=lambda
+
+torsave: CUSTOM ...
+  ARG=eta6,N1H62,N1H61
+  VAR=a1,a2,a3
+  PERIODIC=-PI,PI
+  FUNC=atan2((sin(a1)+sin(a2)+sin(a3+pi))/3,(cos(a1)+cos(a2)+cos(a3+pi))/3)
+...
+
+METAD ...
+ARG=lambda 
+SIGMA=0.0001     # small SIGMA ensure that the Gaussian approaximate a delta function
+HEIGHT=12 # kJ/mol
+PACE=500        # should be nstexpanded
+GRID_MIN=0   # index of alchemical states starts from 0
+GRID_MAX=15    # we have 20 states in total
+GRID_BIN=15
+TEMP=298
+BIASFACTOR=100
+LABEL=metad1D    
+FILE=HILLS_1D
+RESTART=YES
+... METAD
+
+METAD ...
+ARG=torsave,lambda 
+SIGMA=0.35,0.0001     # small SIGMA ensure that the Gaussian approaximate a delta function
+HEIGHT=1.2   # kJ/mol
+PACE=500        # should be nstexpanded
+GRID_MIN=-PI,0   # index of alchemical states starts from 0
+GRID_MAX=PI,15    # we have 20 states in total
+GRID_BIN=100,15
+TEMP=298
+BIASFACTOR=10
+LABEL=metad2D    
+FILE=HILLS_2D
+RESTART=YES
+... METAD
+
+PRINT STRIDE=10 ARG=eta6,torsave,N1H61,N1H62,lambda,metad1D.bias,metad2D.bias FILE=COLVAR
