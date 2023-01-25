@@ -1,0 +1,133 @@
+; Run control
+integrator               = md-vv
+tinit                    = 0
+dt                       = 0.002
+nsteps                   = 500000   ; 1 ns
+nstcomm                  = 100
+; Output control
+nstxout                  = 500
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 500
+nstenergy                = 500
+nstxout-compressed       = 0
+
+; LANGEVIN DYNAMICS OPTIONS
+; Friction coefficient (amu/ps) and random seed
+bd-fric                  = 0
+ld-seed                  = -1
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling  
+tcoupl                   = v-rescale
+nsttcouple               = 1
+nh-chain-length          = 10
+print-nose-hoover-chain-variables = no
+; Groups to couple separately
+tc_grps                  = System
+; Time constant (ps) and reference temperature (K)
+tau_t                    = 0.5
+ref_t                    = 298
+
+; Neighborsearching and short-range nonbonded interactions
+cutoff-scheme            = verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1.2
+; Electrostatics
+coulombtype              = PME
+rcoulomb                 = 1.2
+; van der Waals
+vdwtype                  = cutoff
+vdw-modifier             = potential-switch
+rvdw-switch              = 1.0
+rvdw                     = 1.2
+; Apply long range dispersion corrections for Energy and Pressure
+DispCorr                  = EnerPres
+; Spacing for the PME/PPPM FFT grid
+fourierspacing           = 0.12
+; EWALD/PME/PPPM parameters
+pme_order                = 6
+ewald_rtol               = 1e-06
+epsilon_surface          = 0
+; Pressure coupling is on for NPT
+; Free energy control stuff
+pcoupl                  = C-rescale     ; Pressure coupling on in NPT
+pcoupltype              = isotropic             ; uniform scaling of box vectors
+tau_p                   = 2.0                   ; time constant, in ps
+ref_p                   = 1.0                   ; reference pressure, in bar
+compressibility         = 4.5e-5                ; isothermal compressibility of water, bar^-1
+; Free energy variables
+free_energy              = expanded
+;couple-moltype           = LIG
+couple-lambda0           = vdw-q
+couple-lambda1           = none
+couple-intramol          = no
+init-lambda              = -1
+init-lambda-state        = 0
+delta-lambda             = 0
+nstdhdl                  = 1000
+fep-lambdas              = 
+mass-lambdas             = 
+vdw_lambdas              = 0.00 0.01 0.03 0.05 0.10 0.20 0.35 0.45 0.55 0.65 0.80 0.90 0.95 0.97 0.99 1.00 
+coul_lambdas             = 0.00 0.01 0.03 0.05 0.10 0.20 0.35 0.45 0.55 0.65 0.80 0.90 0.95 0.97 0.99 1.00
+; We are not transforming any bonded or restrained interactions
+bonded_lambdas           = 0.00 0.01 0.03 0.05 0.10 0.20 0.35 0.45 0.55 0.65 0.80 0.90 0.95 0.97 0.99 1.00 
+restraint-lambdas        = 
+temperature-lambdas      = 
+calc-lambda-neighbors    = -1
+init-lambda-weights      = 
+dhdl-print-energy        = total
+sc-alpha                 = 0.5
+sc-power                 = 1
+;sc-r-power               = 6
+sc-sigma                 = 0.3
+sc-coul                  = yes
+separate-dhdl-file       = yes
+dhdl-derivatives         = yes
+dh_hist_size             = 0
+dh_hist_spacing          = 0.1
+
+; expanded ensemble variables
+nstexpanded              = 100
+lmc-stats                = no
+lmc-move                 = metropolized-gibbs
+lmc-weights-equil        = no
+weight-equil-number-all-lambda = -1
+weight-equil-number-samples = -1
+weight-equil-number-steps = -1
+weight-equil-wl-delta    = -1
+weight-equil-count-ratio = -1
+
+; Seed for Monte Carlo in lambda space
+lmc-seed                 = 1000
+mc-temperature           = -1
+lmc-repeats              = 1
+lmc-gibbsdelta           = -1
+lmc-forced-nstart        = 0
+symmetrized-transition-matrix = yes
+nst-transition-matrix    = 100000
+mininum-var-min          = 100
+weight-c-range           = 0
+wl-scale                 = 0.8
+wl-ratio                 = 0.8
+init-wl-delta            = 1
+wl-oneovert              = no
+; Do not generate velocities
+gen_vel                  = no 
+; options for bonds
+constraints              = h-bonds  ; we only have C-H bonds here
+; Type of constraint algorithm
+constraint-algorithm     = lincs
+; Constrain the starting configuration
+; since we are continuing from NPT
+continuation             = yes 
+; Highest order in the expansion of the constraint coupling matrix
+lincs-order              = 12
+
+; simulated tempering variables
+simulated-tempering      = no
+simulated-tempering-scaling = geometric
+sim-temp-low             = 300
+sim-temp-high            = 300
