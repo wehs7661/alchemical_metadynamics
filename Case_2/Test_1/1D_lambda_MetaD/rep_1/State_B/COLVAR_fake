@@ -1,0 +1,4 @@
+#! FIELDS time theta lambda metad.bias
+#! SET min_theta -pi
+#! SET max_theta pi
+ 0.000000 3.140612 0.000000 0.000000

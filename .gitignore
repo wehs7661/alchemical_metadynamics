@@ -2,6 +2,7 @@
 *COLVAR*
 !COLVAR_wrongCV
 !COLVAR_goodCV
+!*fake
 *HILLS*
 *edr
 *log
