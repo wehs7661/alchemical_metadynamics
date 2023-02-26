@@ -173,7 +173,7 @@ if __name__ == "__main__":
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)
     plt.grid()
-    plt.text(-0.12, 1.05, 'C', transform = ax.transAxes, fontsize=26, weight='bold')
+    plt.text(-0.12, 1.05, 'B', transform = ax.transAxes, fontsize=26, weight='bold')
 
     # Panel C
     ax = fig.add_subplot(2, 2, 3)
@@ -183,7 +183,7 @@ if __name__ == "__main__":
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)
     plt.grid()
-    plt.text(-0.12, 1.05, 'B', transform = ax.transAxes, fontsize=26, weight='bold')
+    plt.text(-0.12, 1.05, 'C', transform = ax.transAxes, fontsize=26, weight='bold')
 
     # Panel D 
     ax = fig.add_subplot(2, 2, 4)

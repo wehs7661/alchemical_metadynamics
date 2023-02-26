@@ -1,9 +1,14 @@
 alchemical_metadynamics
 =======================
+[//]: # (Badges)
 [![plumID:23.003](https://www.plumed-nest.org/eggs/23/003/badge.svg)](https://www.plumed-nest.org/eggs/23/003/)
+[![DOI](https://img.shields.io/badge/DOI-10.1021%2Facs.jctc.2c01258-success.svg)](https://doi.org/10.1021/acs.jctc.2c01258)
 
 ## Description
-This is a repository for maintaining the simulation files and analysis codes for the alchemical metadynamics project, which proposed adding alchemical variables to metadynamics to enhance sampling for free energy calculations. The method is demonstrated with three different test systems/alchemical processes, including decoupling an argon atom and a 4-site model from water, and the methylation of a nucleoside both in the isolated form and in a duplex. Note that
+This is a repository for maintaining the simulation files and analysis codes for the alchemical metadynamics project, which has been published in the Journal of Chemical Theory and Computation, titled [Alchemical Metadynamics: Adding Alchemical Variables to Metadynamics to Enhance Sampling in Free energy calculations](https://doi.org/10.1021/acs.jctc.2c01258).
+
+
+In the paper, we proposed adding alchemical variables to metadynamics to enhance sampling for free energy calculations. The method, termed as **alchemical metadynamics**, is demonstrated with three different test systems/alchemical processes, including decoupling an argon atom and a 4-site model from water, and the methylation of a nucleoside both in the isolated form and in a duplex. Note that
 - To keep the repository lightweight, we don't store simulation output files, including `*.edr`, `*.log`, `*.trr`, `*.xtc`, `*cpt`, `*COLVAR*`, `*HILLS*` and most of the `*xvg` files. We do keep some `*txt` files storing analysis results and some analysis outputs in the `*png` format.
 - Some preliminary tests of the project were stored in the archived project repository [MetaD_EXE_TestSys](https://github.com/wehs7661/MetaD_EXE_TestSys).
 - The first version of this repository is the same as the [commit 65cd812](https://github.com/wehs7661/alchemical_MetaD_archived/tree/65cd812a1c11042126abd0d177dfb5e9701f8864) of our previous project repository [alchemical_MetaD_archived](https://github.com/wehs7661/alchemical_MetaD_archived) but without the previous git history the files of the old System 3 that have been migrated to [MetaD_EXE_TestSys](https://github.com/wehs7661/MetaD_EXE_TestSys).
