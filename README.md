@@ -22,6 +22,11 @@ This repository includes the folders listed below. For more details about the fi
 
 - `project_paper`: This folder contains LaTex-relevant files for different versions of the paper submitted to arXiv and the Journal of Chemical Theory and Computation (JCTC). It also includes intermediate files for preparing the final figures in the manuscript and relevant codes for generating the figures. 
 
+## Reference
+if you use alchemical metadynamics in your research, please cite the following paper:
+
+Hsu, W. T., Piomponi, V., Merz, P. T., Bussi, G., & Shirts, M. R. (2023). Alchemical metadynamics: Adding alchemical variables to metadynamics to enhance sampling in free energy calculations. *Journal of Chemical Theory and Computation*, 19(6), 1805-1817. doi: [10.1021/acs.jctc.2c01258](https://pubs.acs.org/doi/10.1021/acs.jctc.2c01258)
+
 ## Contributors of the repo
 - Wei-Tse Hsu (wehs7661@colorado.edu)
 - Valerio Piomponi (vpiompon@sissa.it)
